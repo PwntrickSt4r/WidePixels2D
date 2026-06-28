@@ -1,0 +1,167 @@
+@import url('https://googleapis.com');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url('bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  
+  filter: blur(3px);
+  transform: scale(1.1);
+}
+
+body {
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+body {
+  text-align: center;
+}
+
+.image-container {
+            text-align: center; 
+            margin-top: 50px;
+}
+
+.centered-video {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+}
+
+button, 
+input[type="button"], 
+input[type="submit"], 
+.win7-btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 23px;
+  min-width: 75px;
+  padding: 0 12px;
+  
+  border-radius: 3px;
+  
+  border: 1px solid #707070;
+  box-shadow: 
+    inset 0 1px 0 0 #ffffff,
+    inset 1px 0 0 0 #f2f2f2,
+    inset -1px 0 0 0 #f2f2f2,
+    inset 0 -1px 0 0 #dfdfdf;
+
+  background: linear-gradient(to bottom, 
+    #f2f2f2 0%, 
+    #f2f2f2 49%, 
+    #ebebeb 50%, 
+    #dddddd 100%
+  );
+  
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 12px;
+  color: #000000;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  cursor: default;
+  user-select: none;
+  
+  transition: none;
+}
+
+button:hover, 
+input[type="button"]:hover, 
+input[type="submit"]:hover, 
+.win7-btn:hover {
+  border-color: #3c7fb1;
+  background: linear-gradient(to bottom, 
+    #edf6fa 0%, 
+    #edf6fa 49%, 
+    #d9ecf5 50%, 
+    #bddef0 100%
+  );
+  box-shadow: 
+    inset 0 1px 0 0 #f6fbfd,
+    inset 0 0 3px 0 #a4d4ef;
+}
+
+button:active, 
+input[type="button"]:active, 
+input[type="submit"]:active, 
+.win7-btn:active {
+  border-color: #2c5d7f;
+  background: linear-gradient(to bottom, 
+    #e1f0f6 0%, 
+    #e1f0f6 49%, 
+    #c1dfef 50%, 
+    #a1cfe8 100%
+  );
+  box-shadow: 
+    inset 0 1px 2px 0 #1a4d6f,
+    inset 0 0 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+button:focus-visible, 
+input[type="button"]:focus-visible, 
+input[type="submit"]:focus-visible, 
+.win7-btn:focus-visible {
+  outline: 1px dotted #000000;
+  outline-offset: -4px;
+}
+
+button:disabled, 
+input[type="button"]:disabled, 
+input[type="submit"]:disabled, 
+.win7-btn:disabled {
+  border-color: #a0a0a0;
+  background: #f4f4f4;
+  color: #838383;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+button, input[type="button"], input[type="submit"], .win7-btn {
+  height: 32px;
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+button, 
+input[type="button"], 
+input[type="submit"], 
+.win7-btn {
+  cursor: pointer !important;
+}
